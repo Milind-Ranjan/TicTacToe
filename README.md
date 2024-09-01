@@ -84,7 +84,7 @@ Follow these steps to get a copy of the project up and running on your local mac
 
 ![User Interface](User_Interface.png)
 ![Offline Mode](Offline_Mode.png)
-![Online _Room_Made](Online_Room_Made.png)
+![Online _Room_Mode](Online_Room_Mode.png)
 ![Online_Mode_Results](Online_Mode_Results.png)
 ![FireBase_Integration](FireBase_Integration.png)
 

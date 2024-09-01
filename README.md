@@ -84,26 +84,11 @@ Follow these steps to get a copy of the project up and running on your local mac
 - **Firebase Authentication**: For user authentication (if implemented).
 - **Android Studio**: The official IDE for Android development.
 
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request for any improvements or feature additions.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
 - Inspired by classic Tic-Tac-Toe games.
 - Thanks to Firebase for providing backend services.
-- A big thank you to all contributors.
 
----
 
 Feel free to reach out if you have any questions or feedback regarding the project!

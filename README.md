@@ -9,10 +9,6 @@ A simple yet engaging Tic-Tac-Toe game developed for Android using Kotlin. The g
 - **Real-Time Gameplay**: Experience seamless real-time multiplayer action using Firebase Realtime Database.
 - **Firebase Integration**: The game leverages Firebase for authentication and real-time database functionalities.
   
-## Screenshots
-
-![Offline Mode](screenshots/offline_mode.png)
-![Online Mode](screenshots/online_mode.png)
 
 ## Requirements
 
@@ -83,6 +79,14 @@ Follow these steps to get a copy of the project up and running on your local mac
 - **Firebase Realtime Database**: For real-time data synchronization and online multiplayer functionality.
 - **Firebase Authentication**: For user authentication (if implemented).
 - **Android Studio**: The official IDE for Android development.
+
+## Screenshots
+
+![User Interface](User_Interface.png)
+![Offline Mode](Offline_Mode.png)
+![Online _Room_Made](Online_Room_Made.png)
+![Online_Mode_Results](Online_Mode_Results.png)
+![FireBase_Integration](FireBase_Integration.png)
 
 
 ## Acknowledgments

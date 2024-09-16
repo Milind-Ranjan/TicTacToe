@@ -66,12 +66,12 @@ This Tic Tac Toe app allows users to play the classic game either offline or onl
 - app/src/main/res/values/styles.xml: Defines style resources.
 - app/src/main/res/xml/: Contains Firebase configuration files.
 
-Cloud Firestore Structure
+## Cloud Firestore Structure
 
 - games: Collection storing game data with documents for each game.
 - chats: Subcollection under each game document for chat messages.
 
-Contributing
+## Contributing
 
 1.	Fork the repository.
 2.	Create a new branch (git checkout -b feature-branch).

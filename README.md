@@ -56,6 +56,7 @@ This Tic Tac Toe app allows users to play the classic game either offline or onl
 	•	Connect an Android device or start an emulator.
 	•	Click on the Run button in Android Studio.
 
+
 ## File Structure
 
 •	app/src/main/java/com/yourapp/: Contains Java/Kotlin source files.
@@ -65,6 +66,18 @@ This Tic Tac Toe app allows users to play the classic game either offline or onl
 •	app/src/main/res/values/styles.xml: Defines style resources.
 •	app/src/main/res/xml/: Contains Firebase configuration files.
 
+Cloud Firestore Structure
+
+•	games: Collection storing game data with documents for each game.
+•	chats: Subcollection under each game document for chat messages.
+
+Contributing
+
+1.	Fork the repository.
+2.	Create a new branch (git checkout -b feature-branch).
+3.	Commit your changes (git commit -am 'Add new feature').
+4.	Push to the branch (git push origin feature-branch).
+5.	Create a new Pull Request.
 
 ## Firebase Setup
 
@@ -76,13 +89,12 @@ Realtime Database Rules
       "games": {
         "$gameId": {
           "chats": {
-            ".read": "auth != null",
-            ".write": "auth != null"
+            ".read": "true",
+            ".write": "true"
           }
         }
       }
     }
   }
 }
-•	games: Collection storing game data with documents for each game.
-•	chats: Subcollection under each game document for chat messages.
+

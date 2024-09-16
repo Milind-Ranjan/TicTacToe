@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="14dp"
     tools:context=".GameActivity">
 
     <TextView
@@ -12,23 +13,21 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textStyle="bold"
-        android:textSize="28sp"
-        android:layout_margin="8dp"
+        android:textSize="35sp"
+        android:layout_marginBottom="16dp"
         android:layout_gravity="center"
-        android:padding="8dp"/>
+        android:padding="8dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/game_status_text"
         android:gravity="center"
-        android:textSize="32sp"
-        android:layout_margin="10dp"
+        android:textSize="40sp"
+        android:layout_marginBottom="16dp"
         android:textStyle="bold"
         android:text="Game not started"
-        android:letterSpacing="0.04"
-        android:textColor="#009688"/>
-
+        android:textColor="#FF5722"/>
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -42,67 +41,63 @@
             android:textSize="60sp"
             android:tag="0"
             android:id="@+id/btn_0"
-            tools:text="X"/>
+            android:backgroundTint="#483f73"/>
         <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:textSize="60sp"
             android:tag="1"
             android:id="@+id/btn_1"
-            tools:text="X"/>
+            android:backgroundTint="#483f73"/>
         <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:textSize="60sp"
             android:tag="2"
             android:id="@+id/btn_2"
-            tools:text="X"/>
+            android:backgroundTint="#483f73"/>
         <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:textSize="60sp"
             android:tag="3"
             android:id="@+id/btn_3"
-            tools:text="X"/>
+            android:backgroundTint="#483f73"/>
         <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:textSize="60sp"
             android:tag="4"
             android:id="@+id/btn_4"
-            tools:text="X"/>
+            android:backgroundTint="#483f73"/>
         <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:textSize="60sp"
             android:tag="5"
             android:id="@+id/btn_5"
-            tools:text="X"/>
+            android:backgroundTint="#483f73"/>
         <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:textSize="60sp"
             android:tag="6"
             android:id="@+id/btn_6"
-            tools:text="X"/>
+            android:backgroundTint="#483f73"/>
         <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:textSize="60sp"
             android:tag="7"
             android:id="@+id/btn_7"
-            tools:text="X"/>
+            android:backgroundTint="#483f73"/>
         <Button android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:textSize="60sp"
             android:tag="8"
             android:id="@+id/btn_8"
-            tools:text="X"/>
-
-
-
-
+            android:backgroundTint="#483f73"/>
     </GridLayout>
 
     <Button
@@ -111,14 +106,43 @@
         android:layout_gravity="center"
         android:layout_margin="20dp"
         android:text="Start game"
-        android:id="@+id/start_game_btn"/>
+        android:id="@+id/start_game_btn"
+        android:backgroundTint="#483f73"/>
 
+    <!-- New Chat part that i have added on 16th september for firebase realtime database -->
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:layout_marginTop="16dp"
+        android:padding="8dp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
 
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a message"
+            android:layout_marginEnd="8dp"
+            android:inputType="text"
+            android:padding="12dp"
+            android:backgroundTint="#483f73"/>
 
-
-
-
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:backgroundTint="#483f73"/>
+    </LinearLayout>
 
 </LinearLayout>

@@ -44,10 +44,11 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
             setUI()
         }
         setupChat()
+        // New
         setupFirebaseListener()
     }
 
-
+    //New
     private fun setupChat() {
         chatAdapter = ChatAdapter(chatMessages)
         binding.chatRecyclerView.layoutManager = LinearLayoutManager(this)
@@ -101,6 +102,8 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
             }
         })
     }
+
+    //Old
 
     private fun setUI() {
         gameModel?.apply {
